@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<!-- Один файл: загрузите как index.html на хостинг. Внешние ресурсы: только шрифты Google. -->
+<html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Поступление в Китай из Казахстана 2027/28: пошаговый гайд, калькулятор, база вузов</title>
+<meta name="description" content="Самостоятельное поступление в университеты Китая из Казахстана: CSCA, грант CSC, документы, визы, цены вузов и калькулятор бюджета в тенге.">
+<meta property="og:title" content="Поступление в Китай из Казахстана 2027/28">
+<meta property="og:description" content="Пошаговый гайд, календарь, калькулятор бюджета и база вузов.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Literata:wght@400;600&family=Onest:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f2f5f7;--sf:#fff;--tx:#14202b;--mu:#586573;--ac:#b3261e;--ok:#17624a;--ln:#d5dbe0;--wr:#fff3d6;--hero:#14202b;--ht:#f2f5f7;box-sizing:border-box}
+@media (prefers-color-scheme:dark){:root{--bg:#10161c;--sf:#19212a;--tx:#e6e9ec;--mu:#9aa6b2;--ac:#ff7a6e;--ok:#5fd1a5;--ln:#2b353f;--wr:#3a3220;--hero:#0a0f14;--ht:#e6e9ec}}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.6 Onest,system-ui,sans-serif}
+h1,h2{font-family:Literata,Georgia,serif;line-height:1.2}
+.w{max-width:960px;margin:0 auto;padding:0 18px}
+#bar{position:fixed;top:0;left:0;height:3px;width:0;background:var(--ac);z-index:60}
+header{position:sticky;top:0;z-index:50;background:var(--sf);border-bottom:1px solid var(--ln);padding-top:env(safe-area-inset-top,0px)}
+header .w{display:flex;gap:6px;align-items:center;overflow-x:auto;padding:10px 18px}
+header b{font-family:Literata,Georgia,serif;margin-right:10px;white-space:nowrap}
+nav{display:flex;gap:6px}
+nav a{white-space:nowrap;color:var(--mu);text-decoration:none;font-size:14px;padding:5px 11px;border-radius:16px;transition:background .2s,color .2s}
+nav a:hover,nav a.on{background:var(--tx);color:var(--bg)}
+a:focus-visible,summary:focus-visible,input:focus-visible,select:focus-visible,button:focus-visible{outline:2px solid var(--ac);outline-offset:2px}
+.hero{background:var(--hero);color:var(--ht);padding:56px 0 48px;overflow:hidden}
+.hero h1{font-size:clamp(30px,6.5vw,56px);margin:0 0 14px;max-width:16em}
+.hero h1 span{display:block;opacity:0;transform:translateY(22px);animation:up .8s cubic-bezier(.2,.7,.2,1) forwards}
+.hero h1 span:nth-child(2){animation-delay:.15s}
+.hero p{max-width:56ch;opacity:0;animation:up .8s .35s forwards;color:inherit;opacity:.85}
+.cd{display:flex;gap:28px;flex-wrap:wrap;margin:30px 0 8px}
+.cd div{opacity:0;animation:up .8s .5s forwards}
+.cd div:nth-child(2){animation-delay:.65s}.cd div:nth-child(3){animation-delay:.8s}
+.cd b{display:block;font:600 clamp(36px,8vw,64px)/1 Literata,Georgia,serif}
+.cd small{opacity:.7}
+.btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.btn{display:inline-block;padding:11px 18px;border-radius:6px;text-decoration:none;font-weight:600;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn.p{background:var(--ac);color:#fff}.btn.s{border:1px solid currentColor;color:inherit}
+.tl{display:flex;justify-content:space-between;position:relative;margin:36px 0 0;font-size:13px}
+.tl::before{content:"";position:absolute;top:7px;left:0;right:0;height:2px;background:currentColor;opacity:.35;transform-origin:left;animation:ln 1.6s .6s both}
+.tl div{position:relative;padding-top:22px;max-width:19%;opacity:0;animation:up .6s forwards}
+.tl div::before{content:"";position:absolute;top:0;left:0;width:16px;height:16px;border-radius:50%;background:var(--ac);animation:pop .5s backwards}
+.tl div:nth-child(1){animation-delay:.9s}.tl div:nth-child(2){animation-delay:1.2s}.tl div:nth-child(3){animation-delay:1.5s}.tl div:nth-child(4){animation-delay:1.8s}.tl div:nth-child(5){animation-delay:2.1s}
+.tl div:nth-child(n)::before{animation-delay:inherit}
+@keyframes up{to{opacity:1;transform:none}}@keyframes ln{from{transform:scaleX(0)}}@keyframes pop{from{transform:scale(0)}}
+main{padding:30px 0 40px}
+.alert{background:var(--wr);border-left:5px solid var(--ac);padding:14px 16px;border-radius:6px;margin:0 0 18px}
+.rv{opacity:0;transform:translateY(16px);transition:opacity .6s,transform .6s}.rv.in{opacity:1;transform:none}
+details{background:var(--sf);border:1px solid var(--ln);border-radius:8px;margin:12px 0;transition:border-color .2s}
+details:hover{border-color:var(--ac)}
+summary{cursor:pointer;padding:14px 16px;font:600 19px Literata,Georgia,serif;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";float:right;color:var(--ac);transition:transform .25s}
+details[open] summary::after{content:"–"}
+details[open] .b{animation:fd .35s ease}
+@keyframes fd{from{opacity:0;transform:translateY(-6px)}}
+.b{padding:0 16px 16px}
+.t{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:14.5px;min-width:560px}
+th,td{border-bottom:1px solid var(--ln);padding:8px 10px;text-align:left;vertical-align:top}
+th{color:var(--mu);font-weight:600}
+td.r,th.r{text-align:right;white-space:nowrap}
+tr.tot td{font-weight:600;border-top:2px solid var(--tx)}
+tbody tr{transition:background .15s}tbody tr:hover{background:var(--bg)}
+.ok{display:inline-block;font-size:12.5px;border-radius:4px;padding:0 6px;margin-right:4px;background:var(--ok);color:#fff}
+.end{border-top:1px dashed var(--ln);margin-top:14px;padding-top:10px;font-size:14.5px}
+.cl label{display:flex;gap:10px;padding:6px 0;border-bottom:1px solid var(--ln);cursor:pointer}
+.cl input{margin-top:5px;accent-color:var(--ok)}
+.cl input:checked+span{text-decoration:line-through;color:var(--mu)}
+#pg{height:6px;background:var(--ln);border-radius:3px;margin:8px 0}
+#pg i{display:block;height:100%;width:0;background:var(--ok);border-radius:3px;transition:width .5s}
+small{color:var(--mu)}
+h2.st{font-size:26px;margin:44px 0 12px}
+.box{background:var(--sf);border:1px solid var(--ln);border-radius:8px;padding:16px;margin-bottom:12px}
+.row{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:12px}
+.row label{display:flex;flex-direction:column;font-size:13.5px;color:var(--mu);gap:4px;min-width:150px;flex:1}
+.row label.ck{flex-direction:row;align-items:center;gap:8px;color:var(--tx);min-width:0;flex:none}
+input,select,button{font:inherit;color:var(--tx);background:var(--bg);border:1px solid var(--ln);border-radius:6px;padding:8px}
+button{cursor:pointer;background:var(--sf)}button:hover{border-color:var(--ac)}
+.tag{font-size:12.5px;border-radius:4px;padding:0 6px;color:#fff;background:var(--mu)}
+.tag.dear{background:var(--ac)}.tag.cheap{background:var(--ok)}
+footer{border-top:1px solid var(--ln);padding:26px 0 calc(36px + env(safe-area-inset-bottom,0px));color:var(--mu);font-size:14px}
+@media (max-width:640px){.tl div{font-size:11.5px}.tl{margin-top:28px}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.hero h1 span,.hero p,.cd div,.tl div,.rv{opacity:1;transform:none}.tl::before{transform:none}}
+</style></head><body>
+<div id="bar"></div>
+<header><div class="w"><b>Китай 2027/28</b><nav>
+<a href="#s1">Гайд</a><a href="#s3">CSCA</a><a href="#s4">Календарь</a><a href="#s5">Документы</a><a href="#s6b">Вузы</a><a href="#s8">Деньги</a><a href="#s9">Виза</a><a href="#calc">Калькулятор</a><a href="#s12">Чек-лист</a></nav></div></header>
+<section class="hero"><div class="w">
+<h1><span>Поступление в Китай</span><span>из Казахстана без агентства</span></h1>
+<p>Пошаговый гайд для выпускников 11 класса: бакалавриат, набор 2027/28. Состояние на 13 ноября 2026. Всё, что нужно: экзамен CSCA, грант, документы, виза, цены вузов в тенге.</p>
+<div class="cd"><div><b id="days">–</b><small>дней до CSCA 19–20 декабря 2026</small></div><div><b data-n="73">0</b><small>гранта для Казахстана в 2026</small></div><div><b data-n="450">0</b><small>юаней за один предмет CSCA</small></div></div>
+<div class="tl"><div>Дек 2026<br>CSCA</div><div>Янв–фев 2027<br>Заявка на грант</div><div>Весна<br>Вузы и платные заявки</div><div>Лето<br>Итоги, JW201/JW202, виза</div><div>Сентябрь<br>Приезд</div></div>
+<div class="btns"><a class="btn p" href="#s3">Начать с CSCA</a><a class="btn s" href="#calc">Посчитать бюджет</a></div>
+</div></section>
+<main><div class="w">
+<div class="alert rv"><b>Срочно:</b> ноябрьская сессия CSCA закрыта. Ваша цель — сессия 19–20 декабря 2026. Следите за окном регистрации на csca.cn.</div>
+<details id="s1" open><summary>1. Что подтверждено на сегодня</summary><div class="b">
+<p><span class="ok">подтверждено</span> Посольство КНР открыло приём заявок на стипендию правительства КНР 2027/28 (уведомление от 25 октября 2026). Единой даты нет: у посольств сроки разные, например 20 и 29 января 2027.</p>
+<p><span class="ok">подтверждено</span> Для бакалавриата нужен действующий результат CSCA на момент подачи. Нужно и письмо о предзачислении или приглашение хотя бы от одного вуза.</p>
+<p><span class="ok">подтверждено</span> Заявка подаётся онлайн: studyinchina.csc.edu.cn.</p>
+<p><span class="ok">подтверждено</span> В прошлом году для Казахстана было 73 гранта (бакалавриат, магистратура, докторантура). Документы принимали через eGov.kz или в АО «Центр международных программ» до 18 февраля 2026. После учёбы нужно вернуться и отработать в Казахстане не менее года.</p>
+<p><b>Казахстан, данные прошлого года (набор 2026/27):</b> приём документов с 21 января по 10 февраля 2026, затем продлён до 18 февраля 2026; через eGov.kz с ЭЦП или лично в Центре международных программ. Ориентир на 2027/28: январь–февраль 2027. Другие посольства в 2026 закрывали приём 8 февраля, 14 февраля и 20 марта.</p>
+<p>В 2026 году сообщалось, что CSCA сдают после конкурсного отбора, а посольства требуют результат при подаче. Надёжнее сдать CSCA до подачи: в прошлом году сессии были 21 декабря 2025 и 25 января 2026.</p>
+<div class="end"><b>Результат этапа:</b> вы знаете, что нужны CSCA и письмо из вуза. <b>Проверка:</b> нашли свежее объявление по Казахстану. <b>Нельзя:</b> считать прошлогодние сроки текущими.</div></div></details>
+
+<details id="s2"><summary>2. Четыре маршрута</summary><div class="b"><div class="t"><table>
+<tr><th>Сценарий</th><th>Кто решает</th><th>Что нужно</th></tr>
+<tr><td>А. Полный грант CSC (казахстанская квота)</td><td>Казахстан отбирает, Китай утверждает</td><td>CSCA, письмо о предзачислении, заявка в системе CSC</td></tr>
+<tr><td>Б. Университетский грант</td><td>Вуз</td><td>Заявка на портале вуза; CSCA по требованию вуза</td></tr>
+<tr><td>В. Скидка</td><td>Вуз</td><td>Заявка на платное обучение, запрос о скидке</td></tr>
+<tr><td>Г. Платное обучение</td><td>Вуз</td><td>Заявка и оплата по правилам вуза</td></tr></table></div>
+<p>Две стипендии сразу получить нельзя: Харбинский технологический институт, например, отклоняет заявку, если кандидат подал и на грант КНР, и на грант вуза. Выбирайте один тип гранта в одном вузе.</p>
+<p>Для платных программ и грантов вузов CSCA нужен не всегда: Tsinghua в 2026 году не требовал его обязательно. Для гранта правительства КНР на бакалавриат CSCA обязателен.</p></div></details>
+
+<details id="s3"><summary>3. Экзамен CSCA</summary><div class="b">
+<p><span class="ok">подтверждено</span> Сессии: 14–15 ноября и 19–20 декабря 2026; 23–24 января, 13–14 марта, 24–25 апреля, 26–27 июня 2027. Время пекинское.</p>
+<p><span class="ok">подтверждено</span> Регистрация только на csca.cn. Окно на ноябрь было 15–21 октября. Окно на декабрь источники называют по-разному (25 ноября – 1 декабря или «не объявлено»). Верьте только csca.cn.</p>
+<p><span class="ok">подтверждено</span> Стоимость: 450 юаней за один предмет, 700 юаней за два и больше. Оплата картой Visa или Mastercard, выпущенной вне материкового Китая, либо WeChat Pay или Alipay.</p>
+<p><span class="ok">подтверждено</span> Предметы: математика обязательна; кроме неё Professional Chinese, физика, химия. Результат онлайн примерно через 7 рабочих дней.</p>
+<p>Математика сдаётся всеми; остальные предметы вуз назначает по специальности (смотрите требования вуза). Вне Китая тест обычно сдают дома под онлайн-наблюдением. В прошлом году сессии были 21 декабря 2025 и 25 января 2026.</p>
+<p><b>Мой расчёт:</b> январская сессия (24 января) плюс 7 рабочих дней дают результат в феврале. Это может опоздать к сроку подачи. Берите декабрь.</p>
+<div class="end"><b>Результат:</b> регистрация и оплата сделаны. <b>Проверка:</b> в личном кабинете csca.cn виден статус «зарегистрирован». <b>Нельзя:</b> платить через посредников.</div></div></details>
+
+<details id="s4"><summary>4. Календарь: ноябрь 2026 – сентябрь 2027</summary><div class="b"><div class="t"><table>
+<tr><th>Когда</th><th>Что делать</th><th>Статус</th></tr>
+<tr><td>13–24 ноября</td><td>Загранпаспорт (срок до сентября 2027 и дольше), почта, скан оценок за 10–11 классы</td><td><span class="ok">подтверждено</span> паспорт; остальное — совет</td></tr>
+<tr><td>Ноябрь–декабрь</td><td>Список 5–10 вузов; запрос письма о предзачислении; вопрос «что вместо аттестата»</td><td>совет</td></tr>
+<tr><td>Окно декабря</td><td>Регистрация на CSCA</td><td><span class="ok">подтверждено</span> csca.cn</td></tr>
+<tr><td>19–20 декабря</td><td>Сдача CSCA</td><td><span class="ok">подтверждено</span></td></tr>
+<tr><td>Январь–февраль</td><td>Заявка на грант в системе CSC и по правилам Казахстана</td><td>в 2026: 21 янв – 18 фев</td></tr>
+<tr><td>Весна 2027</td><td>Заявки в вузы на вузовские гранты и платное обучение (у вузов свои волны)</td><td>примеры 2026/27: Tsinghua — до 28 февраля, Harbin Engineering — до 15 мая</td></tr>
+<tr><td>Лето 2027</td><td>Итоги конкурса (вторичный источник называет конец июля – август)</td><td>ориентир</td></tr>
+<tr><td>Июль–август</td><td>Admission Notice, JW201/JW202, виза X1, билеты</td><td>пример вуза: письма в начале июля</td></tr>
+<tr><td>Сентябрь</td><td>Приезд и регистрация в вузе по дате из уведомления</td><td>дата в уведомлении</td></tr></table></div>
+<p><b>Проблема с аттестатом.</b> Аттестат вы получите летом 2027, а подавать нужно зимой. Спросите вуз, принимает ли он справку с оценками или справку об ожидаемом выпуске.</p></div></details>
+
+<details id="s5"><summary>5. Документы</summary><div class="b"><div class="t"><table>
+<tr><th>Документ</th><th>Где взять</th><th>Перевод</th><th>Заверение</th></tr>
+<tr><td>Загранпаспорт</td><td>ЦОН / eGov.kz</td><td>Скан страницы с фото</td><td>Нет</td></tr>
+<tr><td>Аттестат и приложение (или справка с оценками)</td><td>Школа</td><td>Английский или китайский — по требованию вуза</td><td>Нотариальный перевод; апостиль, если требует вуз</td></tr>
+<tr><td>Справка о несудимости</td><td>eGov.kz</td><td>Английский</td><td>Апостиль, если требует вуз</td></tr>
+<tr><td>Медформа (Foreigner Physical Examination Form)</td><td>Клиника, на бланке CSC или вуза</td><td>Заполняется на английском</td><td>Печать клиники; осмотр не раньше чем за 6 месяцев до подачи</td></tr>
+<tr><td>Мотивационное письмо и план обучения</td><td>Пишете сами</td><td>Китайский или английский; для бакалавра от 200 слов</td><td>Нет</td></tr>
+<tr><td>Языковой сертификат (HSK / IELTS / TOEFL)</td><td>Организаторы экзаменов</td><td>Нет</td><td>Нет</td></tr>
+<tr><td>Согласие родителей, паспорта родителей</td><td>Родители</td><td>Английский</td><td>Нотариальное согласие на выезд</td></tr></table></div>
+<p>Стоимость: нотариальное заверение перевода — от 2 000 до 15 000 тенге за каждый документ; апостиль — от 2 000 до 3 000 тенге за документ; паспорт и справки — госпошлины по тарифам eGov/ЦОН. Сроки: справки и апостиль занимают от нескольких дней, поэтому начинайте в ноябре.</p>
+<p><b>Не путайте три вещи.</b> <i>Нотариальный перевод</i>: нотариус заверяет подпись переводчика. <i>Апостиль</i>: штамп госоргана Казахстана, подтверждающий подлинность документа для другой страны-участницы конвенции. <i>Консульская легализация</i>: отдельная процедура, нужна, если апостиль не принимается. Порядок обычно такой: оригинал → апостиль (если требует вуз) → перевод → нотариальное заверение перевода. Казахстан и Китай — участники Гаагской конвенции об апостиле, поэтому обычно достаточно апостиля. Спросите вуз, нужен ли он вам.</p>
+<div class="end"><b>Результат:</b> сканы всех документов в PDF и список требований вуза. <b>Нельзя:</b> переводить и заверять всё подряд до ответа вуза.</div></div></details>
+
+<details id="s6"><summary>6. Выбор вуза и портфолио</summary><div class="b">
+<p><b>Где искать.</b> Каталог программ на studyinchina.csc.edu.cn и страницы «International Students» на сайтах вузов. На каждой странице проверьте: специальность, язык обучения (китайский или английский), стоимость, условия гранта, общежитие, Foundation/Preparatory Year и переход с него на бакалавриат.</p>
+<p><b>Список.</b> Составьте 5–10 вузов: 1–2 Dream (сильный вуз, низкий шанс), 3–4 Target, 2–3 Safe (проходной балл ниже вашего уровня). Для каждого заведите строку: сайт, дедлайн, требования к CSCA, письмо о предзачислении (получено или нет).</p>
+<p><b>Портфолио (3–6 месяцев).</b> Усиливайте то, что видно в оценках и достижениях: олимпиады и конкурсы по вашему профилю (экономика, IT, инженерия, медицина — предметные), реальные проекты со ссылкой, волонтёрство с письмом-подтверждением, языковой экзамен (HSK или IELTS), две рекомендации от учителей. Сертификаты ради количества вес не имеют.</p><p><b>По направлениям.</b> Экономика, бизнес, логистика, торговля: бизнес-проект с цифрами, онлайн-курс по экономике, HSK. IT: репозиторий на GitHub и работающий проект. Инженерия: олимпиады по математике и физике, конструкторский проект. Медицина: олимпиады по биологии и химии, волонтёрство в медучреждении.</p></div></details>
+
+<details id="s6b"><summary>6а. Примеры вузов: дорогие, доступные, дешёвые</summary><div class="b"><p>Цены для самостоятельной оплаты, набор 2026 (где указано иное — отмечено). Тенге по курсу 66,7. Если у вас грант КНР, обучение за вас платит грант. Применять цены к 2027 году можно как ориентир: вузы меняют их ежегодно.</p><div class="t"><table><tr><th>Вуз и программа</th><th>Обучение в год, юани</th><th>≈ тенге</th><th>Application Fee</th><th>Ещё</th></tr><tr><td colspan="5"><b>Дорогие</b></td></tr><tr><td>Tsinghua, Zijing College (на английском)</td><td>100 000</td><td>6 670 000</td><td>800 (≈53 400 ₸)</td><td>Страховка 800 юаней в год</td></tr><tr><td>Fudan, UIPE, экономика (на английском)</td><td>100 000 (с набора 2027)</td><td>6 670 000</td><td>800</td><td>Цена с набора 2027 указана на странице вуза</td></tr><tr><td>Fudan, MBBS (на английском)</td><td>75 000</td><td>5 002 500</td><td>800</td><td>Точную сумму объявляют при зачислении</td></tr><tr><td colspan="5"><b>Доступные</b></td></tr><tr><td>Fudan, программы на китайском</td><td>23 000 – 42 000</td><td>1 534 100 – 2 801 400</td><td>800</td><td>Нужен CSCA; предметы зависят от программы</td></tr><tr><td>Peking University, бакалавриат</td><td>26 000 (гуманитарные) / 30 000 (естественные)</td><td>1 734 200 – 2 001 000</td><td>800</td><td>Страница вуза за 2020 год, сверьте на 2027</td></tr><tr><td>Harbin Institute of Technology (HIT)</td><td>20 000 (китайский) / 26 000 (английский)</td><td>1 334 000 / 1 734 200</td><td>400 (на грант вуза — 600)</td><td>Страховка 800; общежитие 800–1 000 в месяц</td></tr><tr><td colspan="5"><b>Дешёвые</b></td></tr><tr><td>Northeast Normal University (Чанчунь)</td><td>16 000 (гуманитарные и естественные)</td><td>1 067 200</td><td>400 (регистрационный)</td><td>Страница вуза без пометки 2026 года</td></tr><tr><td>Harbin Engineering University (на китайском)</td><td>17 000</td><td>1 133 900</td><td>400</td><td>Брошюра 2026 года на стороннем сайте</td></tr><tr><td>Jilin International Studies University</td><td>18 000</td><td>1 200 600</td><td>см. сайт вуза</td><td>Общежитие 7 200 в год (≈480 240 ₸)</td></tr></table></div><p><b>Сравнение за первый год (только обучение, страховка и Application Fee).</b> Дешёвый вариант (Harbin Engineering): 17 000 + 800 + 400 = 18 200 юаней, около 1 213 940 тенге. Дорогой вариант (Tsinghua Zijing): 100 000 + 800 + 800 = 101 600 юаней, около 6 776 720 тенге. Общежитие, питание, виза и перелёт сюда не входят.</p><p>Официальные Application Fee в этих вузах (400–800 юаней, то есть 26 700–53 400 тенге) укладываются в ваш диапазон 20 000–60 000 тенге. Tsinghua, Fudan, Peking University и HIT указывают, что этот сбор не возвращается.</p><p><small>Страницы вузов: international.join-tsinghua.edu.cn, econ.fudan.edu.cn/uipe, iso.fudan.edu.cn, isdplus.pku.edu.cn, studyathit.hit.edu.cn, iso.nenu.edu.cn, gjc.jisu.edu.cn. Brochure Harbin Engineering University — копия на стороннем сайте newpages.asia.</small></p></div></details>
+
+<details id="s7"><summary>7. Подача заявок</summary><div class="b">
+<p><b>Через вуз.</b> Откройте официальный сайт вуза → раздел для иностранных студентов → Undergraduate Application. Создайте аккаунт по почте, выберите программу и язык обучения, загрузите документы в PDF или JPG (форматы и размеры — в требованиях вуза), заполните план обучения, оплатите Application Fee, если он есть. Сохраните номер заявки.</p>
+<p><b>Через CSC.</b> studyinchina.csc.edu.cn → регистрация → заполните анкету → выберите категорию и код агентства (для Казахстана в 2026 — по объявлению Центра международных программ) → приложите CSCA, письмо о предзачислении, план обучения, медформу → отправьте. Затем по правилам Казахстана подайте документы через eGov.kz или в Центр международных программ (в 2026 срок был до 18 февраля).</p>
+<p><b>Пример плана обучения (от 200 слов):</b> кто вы, почему выбрали эту специальность и вуз, что уже изучали, чему хотите научиться, чем займётесь после учёбы. <b>Статус и ошибки.</b> Проверяйте почту и личный кабинет раз в 2–3 дня, включая спам. Если ошиблись в данных, напишите в приёмную комиссию вуза с номером заявки.</p>
+<div class="end"><b>Нельзя:</b> подавать в последний день и платить сборы на сайтах, которых нет на официальном домене вуза.</div></div></details>
+
+<details id="s8"><summary>8. Стипендии и деньги</summary><div class="b">
+<p><span class="ok">подтверждено</span> Грант КНР по казахстанской квоте: обучение, ежемесячная стипендия, медицинская страховка, общежитие. Всё остальное оплачивает студент (перелёт, личные расходы).</p>
+<p><span class="ok">подтверждено</span> CSCA: 450 или 700 юаней.</p>
+<p><b>Ориентировочные расходы.</b> Application Fee: от 20 000 до 60 000 тенге в зависимости от вуза. Registration Fee: в среднем 600 юаней. Виза: от 30 до 140 долларов США в зависимости от гражданства. CSCA: 450 или 700 юаней. Страховка: от 30 000 до 300 000 тенге в год — цена зависит от вида полиса и от того, что он покрывает. Грант правительства КНР покрывает страховку; при платном обучении её оплачивает студент. Обучение, общежитие и депозит у каждого вуза свои: берите суммы с его страницы. Один и тот же платёж в бюджет дважды не вносите.</p><div class="t"><table><tr><th>Расход</th><th>Тенге</th><th>Юани при 66,7</th><th>Когда платить</th></tr><tr><td>Нотариус за перевод (за документ)</td><td>2 000 – 15 000</td><td>30 – 225</td><td>При подготовке документов</td></tr><tr><td>Апостиль (за документ)</td><td>2 000 – 3 000</td><td>30 – 45</td><td>При подготовке документов</td></tr><tr><td>Application Fee</td><td>20 000 – 60 000</td><td>300 – 900</td><td>При подаче заявки</td></tr><tr><td>CSCA</td><td>30 000 – 46 700</td><td>450 – 700</td><td>При регистрации на csca.cn</td></tr><tr><td>Registration Fee (в среднем)</td><td>около 40 000</td><td>600</td><td>После зачисления</td></tr><tr><td>Страховка (в год)</td><td>30 000 – 300 000</td><td>450 – 4 500</td><td>Перед выездом или в вузе</td></tr></table></div><p><b>Пример: 6 документов, платное обучение.</b> Перевод с нотариусом: 12 000 – 90 000 тенге. Апостиль: 12 000 – 18 000 тенге. Вместе с Application Fee, CSCA, Registration Fee и страховкой до приезда выходит от 144 000 до 554 700 тенге (по курсу 66,7). Сюда не входят обучение, общежитие, виза и перелёт.</p>
+<p><b>Чем отличаются сборы.</b> Application Fee платят при подаче заявки. Registration Fee и депозит платят после зачисления, когда подтверждаете место. Application Fee, как правило, не возвращается при отказе; условия возврата остальных платежей указаны в правилах вуза.</p>
+<p><b>Как не попасться мошенникам.</b> Реквизиты берите только с официальной страницы вуза и сверяйте с приёмной комиссией письмом. Не переводите деньги частным лицам. «Гарантия гранта за плату» — признак обмана: грант выдают вуз и CSC бесплатно.</p>
+<p><b>Конвертация.</b> Сегодня, 13 ноября 2026, курс 66,7 тенге за юань. В среднем курс около 70 тенге, при нём CSCA стоит 31 500 – 49 000 тенге, а Registration Fee около 42 000 тенге. Закладывайте запас на колебания курса и пересчитайте сумму в день оплаты.</p></div></details>
+
+<details id="s9"><summary>9. Опекунство, приглашение и виза</summary><div class="b">
+<p><b>Опекунство.</b> Для студентов младше 18 лет часть вузов требует договор опеки (Guardian Agreement). Опекуном может быть гражданин Китая или сотрудник вуза, договор заключается на срок обучения. Совершеннолетним студентам опекун не нужен; при исполнении 18 лет договор прекращается.</p>
+<p><b>Приглашение.</b> После зачисления вуз присылает Admission Notice и форму JW201 (для стипендиатов правительства КНР) или JW202 (для студентов за свой счёт). Курьером из Китая это обычно идёт 1–3 недели, вузы отправляют материалы за 1–3 месяца до начала учёбы.</p>
+<p><b>Виза.</b> X1 — для учёбы свыше 180 дней (бакалавриат). Нужны: паспорт, Admission Notice, оригинал и копия JW201/JW202, Foreigner Physical Examination Record, фото на белом фоне; студентам младше 18 лет — свидетельство о рождении. Сбор от 30 до 140 долларов США. После въезда в течение 30 дней виза меняется на вид на жительство.</p>
+<div class="end"><b>Нельзя:</b> покупать билеты до получения визы и подтверждённой даты прибытия.</div></div></details>
+
+<details id="s10"><summary>10. Выезд и первые дни</summary><div class="b">
+<p><b>До вылета.</b> Билет на дату из уведомления вуза; копии документов в бумаге и в облаке; адрес общежития китайскими иероглифами; Alipay и WeChat установить заранее; проверить, какие лекарства и вещи запрещены к ввозу (см. сайты таможни КНР и авиакомпании).</p>
+<p><b>Первые 24 часа.</b> Добраться до вуза, заселиться, получить регистрацию проживания у администратора общежития (в Китае её делают в течение 24 часов).</p>
+<p><b>Первые 7 дней.</b> Пройти регистрацию в международном отделе вуза, сдать документы, купить SIM-карту, пройти медосмотр по расписанию вуза.</p>
+<p><b>Первые 30 дней.</b> Оформить вид на жительство через вуз (по визе X1 в течение 30 дней), открыть банковский счёт, если нужно.</p></div></details>
+
+<details id="s11"><summary>11. Типичные ошибки (12 главных)</summary><div class="b"><ol>
+<li>Пропустили сессию CSCA — планируйте декабрь.</li>
+<li>Взяли даты 2026 года как даты 2027 года — сверяйте с официальным объявлением.</li>
+<li>Не получили письмо о предзачислении до подачи на грант.</li>
+<li>Заплатили не на официальный сайт — сверяйте реквизиты письмом.</li>
+<li>Доверились посреднику, обещающему грант за деньги.</li>
+<li>Перевели и заверили документы не так, как требует вуз — сначала спросите вуз.</li>
+<li>Не проверили апостиль, когда он нужен.</li>
+<li>Выбрали программу на китайском без HSK.</li>
+<li>Подали на грант КНР и на грант вуза, хотя вуз это запрещает.</li>
+<li>Подали в последний день: порталы падают.</li>
+<li>Не следили за почтой, включая спам.</li>
+<li>Купили билет до получения визы.</li></ol>
+<p>Ещё 18: не сделали копии документов; не проверили срок паспорта; не прочли Admission Notice; опоздали с медосмотром; не взяли фото нужного формата; ошиблись в написании имени относительно паспорта; указали чужую почту; не ответили вузу на запрос; не подтвердили место в срок; не оплатили регистрационный сбор; не оформили страховку; не зарегистрировались в полиции за 30 дней; не открыли Alipay до вылета; не узнали адрес и корпус общежития; не взяли наличные на первые дни; не сохранили ссылку на портал; не проверили визовые правила перед билетом; не сообщили вузу дату прилёта.</p></div></details>
+
+<details id="s12" open><summary>12. Мой чек-лист</summary><div class="b cl">
+<div id="pg"><i></i></div><small id="pt"></small>
+<label><input type="checkbox"><span>Загранпаспорт действителен до сентября 2027 и дольше</span></label>
+<label><input type="checkbox"><span>Нашёл объявление Центра международных программ на 2027/28</span></label>
+<label><input type="checkbox"><span>Зарегистрировался на csca.cn и оплатил CSCA (19–20 декабря)</span></label>
+<label><input type="checkbox"><span>Составил список 5–10 вузов (Dream / Target / Safe)</span></label>
+<label><input type="checkbox"><span>Узнал у вузов, что принимают вместо аттестата</span></label>
+<label><input type="checkbox"><span>Получил письмо о предзачислении</span></label>
+<label><input type="checkbox"><span>Подготовил план обучения и мотивационное письмо</span></label>
+<label><input type="checkbox"><span>Подготовил медформу и справку о несудимости</span></label>
+<label><input type="checkbox"><span>Подал заявку в системе CSC и по правилам Казахстана</span></label>
+<label><input type="checkbox"><span>Получил Admission Notice и JW201/JW202</span></label>
+<label><input type="checkbox"><span>Оформил визу и купил билет</span></label>
+<label><input type="checkbox"><span>Прошёл регистрацию в вузе и оформил вид на жительство</span></label>
+</div></details>
+
+<section id="calc"><h2 class="st">Калькулятор первого года</h2>
+<div class="box">
+<div class="row">
+<label>Вуз и программа<select id="u"></select></label>
+<label>Режим<select id="m"><option value="paid">Платное обучение</option><option value="grant">Грант КНР (обучение, общежитие, страховка покрывает грант)</option></select></label>
+<label>Курс юаня, ₸<input id="r" type="number" step="0.1" value="66.7"></label>
+</div>
+<div class="row">
+<label>Документов на перевод и апостиль<input id="n" type="number" min="0" value="6"></label>
+<label>Месяцев в общежитии (если цена за месяц)<input id="mo" type="number" min="1" max="12" value="10"></label>
+<label>Страховка своя, ₸ в год (пусто — как у вуза)<input id="ins" type="number" min="0" placeholder="30000–300000"></label>
+</div>
+<div class="row">
+<label class="ck"><input id="reg" type="checkbox" checked>Registration Fee 600 ¥</label>
+<label class="ck"><input id="cs" type="checkbox" checked>CSCA</label>
+<button id="r70" type="button">Курс 70 (средний)</button>
+<button id="r667" type="button">Курс 66,7 (сегодня)</button>
+</div>
+<div class="t"><table><thead><tr><th>Статья</th><th class="r">Минимум, ₸</th><th class="r">Максимум, ₸</th></tr></thead><tbody id="out"></tbody></table></div>
+<p><small id="nt"></small></p>
+</div>
+
+<h2 class="st">База вузов</h2>
+<div class="row">
+<label>Группа<select id="fg"><option value="">Все</option><option value="dear">Дорогие</option><option value="mid">Доступные</option><option value="cheap">Дешёвые</option></select></label>
+<label>Язык обучения<select id="fl"><option value="">Любой</option><option value="zh">Китайский</option><option value="en">Английский</option></select></label>
+<label>Обучение до, ¥ в год<input id="fm" type="number" step="1000" placeholder="например 30000"></label>
+</div>
+<div class="t"><table><thead><tr><th>Вуз</th><th>Программа</th><th class="r">Обучение, ¥</th><th class="r">≈ ₸</th><th class="r">App. Fee, ¥</th><th>Источник</th></tr></thead><tbody id="db"></tbody></table></div>
+<p><small>Расчёт не включает визу (30–140 долларов США в зависимости от гражданства), перелёт, питание и проживание, если его нет в данных вуза. Страховка вуза — 800 ¥ в год, где вуз её указал; в остальных строках это ориентир. Обязательно сверяйте цифры на странице вуза перед оплатой.</small></p>
+</section>
+<p><small>Источники: уведомления посольств КНР (mv.china-embassy.gov.cn, ss.china-embassy.gov.cn), csca.cn, studyinchina.csc.edu.cn, сообщения Kazinform и Orda.kz. Сайты меняются: сверяйте всё с официальными страницами перед оплатой и подачей.</small></p>
+
+</div></main>
+<footer><div class="w">Сайт — справочник, не агентство и не гарантирует поступление или грант. Данные набора 2026, проверены 13 ноября 2026. Перед оплатой и подачей сверяйте всё с официальными сайтами вузов, csca.cn и посольства КНР.</div></footer>
+<script>
+(function(){var c=document.querySelectorAll('.cl input'),k='cg1',s={};
+try{s=JSON.parse(localStorage.getItem(k)||'{}')}catch(e){}
+function u(){var n=0;c.forEach(function(x){if(x.checked)n++});
+document.querySelector('#pg i').style.width=(n/c.length*100)+'%';
+document.getElementById('pt').textContent='Выполнено '+n+' из '+c.length}
+c.forEach(function(x,i){x.checked=!!s[i];x.addEventListener('change',function(){s[i]=x.checked;
+try{localStorage.setItem(k,JSON.stringify(s))}catch(e){}u()})});u();
+document.querySelectorAll('nav a').forEach(function(a){a.addEventListener('click',function(){
+var d=document.querySelector(a.getAttribute('href'));if(d)d.open=true})});})();
+</script><script>
+var D=[
+{n:"Tsinghua University",c:"Пекин",p:"Zijing College",l:"en",g:"dear",t:[100000,100000],a:800,i:800,u:"https://international.join-tsinghua.edu.cn/info/1082/1152.htm"},
+{n:"Fudan University",c:"Шанхай",p:"Экономика UIPE (с набора 2027)",l:"en",g:"dear",t:[100000,100000],a:800,i:800,u:"https://econ.fudan.edu.cn/uipe/Prospective_Students1/Tuition_and_Expenses.htm"},
+{n:"Fudan University",c:"Шанхай",p:"MBBS",l:"en",g:"dear",t:[75000,75000],a:800,i:800,u:"https://iso.fudan.edu.cn"},
+{n:"Fudan University",c:"Шанхай",p:"Программы на китайском",l:"zh",g:"mid",t:[23000,42000],a:800,i:800,u:"https://iso.fudan.edu.cn"},
+{n:"Peking University",c:"Пекин",p:"Бакалавриат (страница вуза за 2020 год)",l:"zh",g:"mid",t:[26000,30000],a:800,i:800,u:"https://isdplus.pku.edu.cn/info/1465/6221.htm"},
+{n:"Harbin Institute of Technology",c:"Харбин",p:"На китайском",l:"zh",g:"mid",t:[20000,20000],a:400,i:800,dm:[800,1000],u:"https://studyathit.hit.edu.cn/18337/list.htm"},
+{n:"Harbin Institute of Technology",c:"Харбин",p:"На английском",l:"en",g:"mid",t:[26000,26000],a:400,i:800,dm:[800,1000],u:"https://studyathit.hit.edu.cn/18337/list.htm"},
+{n:"Northeast Normal University",c:"Чанчунь",p:"Гуманитарные и естественные (страница без пометки 2026)",l:"zh",g:"cheap",t:[16000,16000],a:400,i:800,u:"https://iso.nenu.edu.cn/info/1060/1964.htm"},
+{n:"Harbin Engineering University",c:"Харбин",p:"Программы на китайском (брошюра на стороннем сайте)",l:"zh",g:"cheap",t:[17000,17000],a:400,i:800,u:"https://www.newpages.asia/ph/bi/news/169786"},
+{n:"Jilin International Studies University",c:"Чанчунь",p:"Программы на китайском",l:"zh",g:"cheap",t:[18000,18000],a:0,i:800,dy:7200,u:"https://gjc.jisu.edu.cn/info/1184/2393.htm"}];
+var L={dear:"Дорогие",mid:"Доступные",cheap:"Дешёвые"};
+function $(i){return document.getElementById(i)}
+function f(x){return Math.round(x).toLocaleString("ru-RU")}
+function rate(){var v=parseFloat($("r").value);return v>0?v:66.7}
+var us=$("u");D.forEach(function(d,i){var o=document.createElement("option");o.value=i;o.textContent=d.n+" — "+d.p;us.appendChild(o)});
+function calc(){var d=D[us.value],r=rate(),paid=$("m").value==="paid",n=Math.max(0,parseInt($("n").value)||0),mo=parseInt($("mo").value)||10,rows=[],note=[];
+function add(s,a,b){rows.push([s,a,b])}
+if(paid){add("Обучение (первый год)",d.t[0]*r,d.t[1]*r);
+var iv=parseFloat($("ins").value);add("Страховка",iv>0?iv:d.i*r,iv>0?iv:d.i*r);
+if(d.dy)add("Общежитие",d.dy*r,d.dy*r);else if(d.dm)add("Общежитие ("+mo+" мес.)",d.dm[0]*mo*r,d.dm[1]*mo*r);else note.push("цена общежития для этого вуза не найдена, в расчёт не включена");}
+else note.push("при гранте обучение, общежитие и страховку покрывает грант");
+add("Application Fee",d.a*r,d.a*r);
+if($("cs").checked)add("CSCA",450*r,700*r);
+if($("reg").checked)add("Registration Fee",600*r,600*r);
+add("Перевод у нотариуса ("+n+" док.)",n*2000,n*15000);
+add("Апостиль ("+n+" док.)",n*2000,n*3000);
+var a=0,b=0,h="";rows.forEach(function(x){a+=x[1];b+=x[2];h+="<tr><td>"+x[0]+"</td><td class='r'>"+f(x[1])+"</td><td class='r'>"+f(x[2])+"</td></tr>"});
+h+="<tr class='tot'><td>Итого</td><td class='r'>"+f(a)+"</td><td class='r'>"+f(b)+"</td></tr>";
+$("out").innerHTML=h;$("nt").textContent="Курс "+rate()+" ₸ за юань. Без визы, перелёта и питания"+(note.length?"; "+note.join("; "):"")+". Источник цен: "+d.u;}
+function db(){var g=$("fg").value,l=$("fl").value,m=parseFloat($("fm").value),r=rate(),h="";
+D.forEach(function(d,i){if(g&&d.g!==g)return;if(l&&d.l!==l)return;if(m&&d.t[0]>m)return;
+var t=d.t[0]===d.t[1]?f(d.t[0]):f(d.t[0])+" – "+f(d.t[1]),k=d.t[0]===d.t[1]?f(d.t[0]*r):f(d.t[0]*r)+" – "+f(d.t[1]*r);
+h+="<tr><td>"+d.n+"<br><small>"+d.c+" · <span class='tag "+d.g+"'>"+L[d.g]+"</span></small></td><td>"+d.p+"</td><td class='r'>"+t+"</td><td class='r'>"+k+"</td><td class='r'>"+(d.a||"—")+"</td><td><a href='"+d.u+"' target='_blank' rel='noopener'>страница вуза</a></td></tr>"});
+$("db").innerHTML=h||"<tr><td colspan='6'>Ничего не найдено. Измените фильтры.</td></tr>"}
+function all(){calc();db()}
+["u","m","r","n","mo","ins","reg","cs","fg","fl","fm"].forEach(function(i){$(i).addEventListener("input",all)});
+$("r70").onclick=function(){$("r").value=70;all()};$("r667").onclick=function(){$("r").value=66.7;all()};
+all();
+</script>
+<script>
+(function(){
+var rm=matchMedia("(prefers-reduced-motion:reduce)").matches;
+var d=Math.ceil((new Date("2026-12-19T00:00:00+06:00")-new Date())/864e5);
+document.getElementById("days").textContent=d>0?d:"0";
+document.querySelectorAll("[data-n]").forEach(function(e){var n=+e.dataset.n,t0=null;
+function s(t){if(!t0)t0=t;var p=Math.min((t-t0)/1400,1);e.textContent=Math.round(n*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(s)}
+rm?e.textContent=n:setTimeout(function(){requestAnimationFrame(s)},700)});
+var bar=document.getElementById("bar");
+addEventListener("scroll",function(){var h=document.documentElement;bar.style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+"%"},{passive:true});
+var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}})},{threshold:.08});
+document.querySelectorAll("main details,main .box,.alert,h2.st").forEach(function(e){e.classList.add("rv");io.observe(e)});
+var links=[].slice.call(document.querySelectorAll("header nav a"));
+var so=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){links.forEach(function(a){a.classList.toggle("on",a.getAttribute("href")==="#"+x.target.id)})}})},{rootMargin:"-40% 0px -55% 0px"});
+links.forEach(function(a){var t=document.querySelector(a.getAttribute("href"));if(t)so.observe(t)});
+})();
+</script></body></html>
